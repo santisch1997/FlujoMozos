@@ -1,0 +1,40 @@
+.propina-total {
+    margin-top: 32px;
+    text-align: left;
+  }
+  
+  .propina-total-label {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  
+
+  .propina-total-star {
+    font-size: 30px;
+    color: #FFBD00;
+    margin-top: 30px; /* Ajusta este valor según necesites */
+  }
+  .propina-total-amount-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -15px; /* Ajusta el espacio entre label y monto */
+    margin-bottom: 24px;
+  }
+  
+  
+  .propina-total-amount {
+    font-size: 42px;
+    font-weight: bold;
+    margin-right: 16px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  .propina-total-eye-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+  }

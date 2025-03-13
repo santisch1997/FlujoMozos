@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: white; /* Fondo general blanco */
+    color: #2b1c46; /* Color general oscuro */
+  }
+  
+/* Contenedor envolvente con fondo morado y bordes redondeados */
+.vista-mozos-contenedor {
+  background-color: #2b1c46;
+  color: white;
+  padding: 24px;
+  border-radius: 0 0 50px 50px;
+  margin-bottom: 18px;
+}
+
+/* Ajuste del contenedor principal */
+.vista-mozos-main-content {
+  padding: 0 24px;
+}
+
+
+.vista-mozos {
+  max-width: 100%;
+  min-height: 100vh;
+  color: white;
+}
+
+.vista-mozos-main-content {
+  padding: 0 24px;
+}
+
+
+/* Tabs */
+.vista-mozos-tabs-container {
+    display: flex;
+    justify-content: center; /* Centra el Toggle horizontalmente */
+    align-items: center;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    margin: 20px 0;
+  }
+  
+
+.vista-mozos-tab {
+  flex: 1;
+  padding: 12px;
+  border-radius: 9999px;
+  text-align: center;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: #2b1c46; /* Reemplazo de var(--purple-dark) */
+  cursor: pointer;
+}
+
+.vista-mozos-tab-active {
+  background-color: #eb5998; /* Reemplazo de var(--pink) */
+  color: white;
+}
+
+
+

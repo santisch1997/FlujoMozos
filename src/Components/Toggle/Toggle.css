@@ -1,0 +1,27 @@
+.toggle {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    border-radius: 24px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #ffffffb9; /* Fondo base con 10% de opacidad */
+  }
+  
+  .toggle-option {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600; /* Semi Bold */
+    color: #000000a1; /* Negro para la opción no seleccionada */
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-option.selected {
+    background-color: #eb5998; /* Fondo rosa intenso */
+    color: #fff; /* Texto blanco */
+  }
+  

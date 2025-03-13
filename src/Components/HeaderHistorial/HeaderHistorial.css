@@ -1,0 +1,36 @@
+
+.historial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 12px;
+  }
+
+.historial-header-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #000000; /* Reemplazo de var(--gray-300) */
+
+  }
+
+.historial-header-mostrar-todas {
+    display: flex;
+    align-items: center;
+    color: #aeaeae; /* Reemplazo de var(--gray-300) */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+
+.historial-header-arrow-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    color: #aeaeae; /* Reemplazo de var(--gray-300) */
+  }
+  
+

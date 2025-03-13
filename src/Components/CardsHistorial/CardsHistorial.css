@@ -1,0 +1,47 @@
+
+.cards-historial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 12px;
+
+}
+
+.cards-historial-monto {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cards-historial-monto.reseña {
+  color: rgba(0, 0, 0, 0.693);
+}
+
+
+.cards-historial-card {
+  background-color: #f2ecf9; /* Reemplazo de var(--purple-light) */
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-historial-fecha {
+  color: #2b1c46; /* Reemplazo de var(--purple-dark) */
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+}
+
+.cards-historial-hora {
+  color: #2a2a2a; /* Reemplazo de var(--gray-500) */
+  margin: 0;
+}
+
+.cards-historial-monto {
+  color: #5bbb56; /* Reemplazo de var(--green) */
+  font-weight: bold;
+  font-size: 20px;
+}
+
