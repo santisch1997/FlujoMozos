@@ -13,7 +13,14 @@ margin-top: 20px;
   font-weight: bold;
   margin: 0;
   color: #000000;
+  flex-grow: 1; /* Ocupa el espacio disponible */
+  min-width: 0; /* Evita que se desborde */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; /* Alinea el texto a la izquierda */
 }
+
 
 .historial-header-mostrar-todas {
   display: flex;
