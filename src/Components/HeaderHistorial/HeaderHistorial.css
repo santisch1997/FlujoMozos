@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     padding: 12px;
   }
 
 .historial-header-title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin: 0;
     color: #000000; /* Reemplazo de var(--gray-300) */

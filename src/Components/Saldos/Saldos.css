@@ -10,7 +10,7 @@
   }
   
   .saldos-label {
-    font-size: 18px;
+    font-size: 16px;
     color: #c4c4c4; /* Reemplazo de var(--gray-300) */
   }
   
@@ -19,6 +19,8 @@
     color: #ffffff; /* Reemplazo de var(--purple-dark) */
     padding: 8px 16px;
     border-radius: 9999px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 14px;
+
   }
   
