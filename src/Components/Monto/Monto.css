@@ -9,6 +9,17 @@
     margin-bottom: 0px;
     text-align: left;
   }
+  .propina-total-amount.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .eye-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
   
 
   .propina-total-star {

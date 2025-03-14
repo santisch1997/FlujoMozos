@@ -1,26 +1,23 @@
-import "./HeaderHistorial.css"
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import "./HeaderHistorial.css";
 
-const HeaderHistorial = () => {
+const HeaderHistorial = ({ onMostrarTodas, onVolver, mostrarTodas }) => {
   return (
     <div className="historial-header">
-      <h2 className="historial-header-title">Propinas recientes</h2>
-      <button className="historial-header-mostrar-todas">
-        Mostrar todas
-        {/* Icono de flecha */}
-        <svg className="historial-header-arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path
-            d="M12 5L19 12L12 19"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
+      {mostrarTodas && (
+        <button className="historial-header-back-button" onClick={onVolver}>
+          <ChevronLeft size={24} />
+        </button>
+      )}
+      <h2 className="historial-header-title">{mostrarTodas ? "Inicio" : "Propinas recientes"}</h2>
+      {!mostrarTodas && (
+        <button className="historial-header-mostrar-todas" onClick={onMostrarTodas}>
+          Mostrar todas
+          <ChevronRight className="historial-header-arrow-icon" size={20} />
+        </button>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default HeaderHistorial
-
+export default HeaderHistorial;

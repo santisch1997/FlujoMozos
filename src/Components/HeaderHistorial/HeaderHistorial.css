@@ -1,36 +1,52 @@
-
 .historial-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    padding: 12px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea todo a la izquierda */
+  padding: 12px;
+  padding-left: 18px;
+margin-top: 20px;
+  gap: 12px; /* Espacio entre los elementos */
+}
 
 .historial-header-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0;
-    color: #000000; /* Reemplazo de var(--gray-300) */
-
-  }
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+}
 
 .historial-header-mostrar-todas {
-    display: flex;
-    align-items: center;
-    color: #aeaeae; /* Reemplazo de var(--gray-300) */
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  
+  display: flex;
+  align-items: center;
+  color: #a4a4a4;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto; /* Empuja el botón a la derecha */
+}
 
 .historial-header-arrow-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 4px;
-    color: #aeaeae; /* Reemplazo de var(--gray-300) */
-  }
-  
+  width: 20px;
+  height: 20px;
+  color: #aeaeae;
+}
 
+.historial-header-back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #191919;
+  padding-right: 0px;
+}
+
+.historial-header-back-button:hover {
+  color: gray;
+}
+
+/* Mantiene el espacio del botón cuando "Mostrar todas" desaparece */
+.historial-header-placeholder {
+  width: 120px;
+  visibility: hidden;
+}
