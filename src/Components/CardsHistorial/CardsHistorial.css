@@ -1,14 +1,13 @@
-
 .cards-historial-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 24px;
-  padding: 12px;
+  gap: 10px; /* Achicamos el gap */
+  margin-bottom: 20px; /* Un poco menos de margen */
+  padding: 10px; /* Un poco menos de padding */
 }
 
 .cards-historial-monto {
-  font-size: 18px;
+  font-size: 16px; /* Achicamos fuente */
   font-weight: bold;
 }
 
@@ -16,31 +15,78 @@
   color: rgba(0, 0, 0, 0.693);
 }
 
-
 .cards-historial-card {
-  background-color: #f2ecf9; /* Reemplazo de var(--purple-light) */
-  border-radius: 12px;
-  padding: 16px;
+  background-color: #f2ecf9;
+  border-radius: 10px; /* Achicamos border radius */
+  padding: 12px; /* Menos padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .cards-historial-fecha {
-  color: #2b1c46; /* Reemplazo de var(--purple-dark) */
-  font-size: 16px;
+  color: #2b1c46;
+  font-size: 14px; /* Achicamos fuente */
   font-weight: bold;
-  margin: 0 0 4px 0;
+  margin: 0 0 3px 0; /* Margen más chico */
 }
 
 .cards-historial-hora {
-  color: #2a2a2a; /* Reemplazo de var(--gray-500) */
+  color: #2a2a2a;
   margin: 0;
+  font-size: 13px; /* Levemente más chica */
 }
 
 .cards-historial-monto {
-  color: #5bbb56; /* Reemplazo de var(--green) */
+  color: #5bbb56;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px; /* Achicamos */
 }
 
+
+/* ESTILOS PARA TABLET Y MOBILE (MANTENIENDO TODO IGUAL) */
+@media (max-width: 1024px) {
+  .cards-historial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 12px;
+  }
+
+  .cards-historial-monto {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .cards-historial-monto.reseña {
+    color: rgba(0, 0, 0, 0.693);
+  }
+
+  .cards-historial-card {
+    background-color: #f2ecf9;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards-historial-fecha {
+    color: #2b1c46;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+  }
+
+  .cards-historial-hora {
+    color: #2a2a2a;
+    margin: 0;
+  }
+
+  .cards-historial-monto {
+    color: #5bbb56;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

@@ -5,13 +5,16 @@ import logo from "../../assets/logo.png"
 const Header = () => {
   return (
     <header className="header">
-      {/* Icono de menú hamburguesa */}
-      <Menu className="header-icon" size={32} />
+      {/* Rectángulo solo para desktop */}
+      <div className="header-greeting">Hola Santiago!</div>
+
+      {/* Icono hamburguesa */}
+      <Menu className="header-icon-hamb" size={32} />
 
       {/* Logo */}
       <img src={logo} alt="Logo" className="header-logo" />
 
-      {/* Icono de campana de notificaciones */}
+      {/* Icono notificaciones */}
       <Bell className="header-icon" size={30} />
     </header>
   )

@@ -6,58 +6,185 @@ body {
     color: #2b1c46; /* Color general oscuro */
   }
   
-/* Contenedor envolvente con fondo morado y bordes redondeados */
-.vista-mozos-contenedor {
-  background-color: #2b1c46;
-  color: white;
-  padding: 24px;
-  border-radius: 0 0 50px 50px;
-  margin-bottom: 18px;
-}
-
-/* Ajuste del contenedor principal */
-.vista-mozos-main-content {
-  padding: 0 24px;
-}
-
-
-.vista-mozos {
-  max-width: 100%;
-  min-height: 100vh;
-  color: white;
-}
-
-.vista-mozos-main-content {
-  padding: 0 24px;
-}
-
-
-/* Tabs */
-.vista-mozos-tabs-container {
+  /* Contenedor envolvente con fondo morado y bordes redondeados */
+  .vista-mozos-contenedor {
+    background-color: #2b1c46;
+    color: white;
+    padding: 24px;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 18px;
+  }
+  
+  /* Ajuste del contenedor principal */
+  .vista-mozos-main-content {
+    padding: 0 24px;
+  }
+  
+  .vista-mozos {
+    
+    max-width: 100%;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  
+  /* Tabs */
+  .vista-mozos-tabs-container {
     display: flex;
     justify-content: center; /* Centra el Toggle horizontalmente */
     align-items: center;
     width: 100%; /* Ocupar todo el ancho disponible */
-    margin: 20px 0;
+  }
+  
+  .vista-mozos-tab {
+    flex: 1;
+    padding: 12px;
+    border-radius: 9999px;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    color: #2b1c46; /* Reemplazo de var(--purple-dark) */
+    cursor: pointer;
+  }
+  
+  .vista-mozos-tab-active {
+    background-color: #eb5998; /* Reemplazo de var(--pink) */
+    color: white;
+  }
+
+  .vista-mozos-wrapper {
+    display: block; /* Mobile & Tablet */
+  }
+
+  .historial-desktop-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  @media (min-width: 1024px) {
+    .vista-mozos-wrapper {
+      display: flex; /* SideBar + Contenido en fila */
+    }
+
+    .vista-mozos {
+      width: calc(100% - 280px); /* Resto del ancho después del sidebar */
+    }
+  }
+  
+  /* 📱 Mobile & Tablet */
+  @media (max-width: 1023px) {
+    .vista-mozos-contenedor {
+      padding: 24px;
+      border-radius: 0 0 50px 50px;
+      margin-bottom: 18px;
+    }
+  
+    .vista-mozos-main-content {
+      padding: 0 24px;
+    }
+
+    .vista-mozos {
+      max-width: 100%;
+      min-height: 100vh;
+      color: white;
+    }
+  
+    .vista-mozos-tab {
+      flex: 1;
+      padding: 12px;
+      border-radius: 9999px;
+      text-align: center;
+      font-weight: 500;
+      border: none;
+      background: transparent;
+      color: #2b1c46;
+      cursor: pointer;
+    }
+  
+    .vista-mozos-tab-active {
+      background-color: #eb5998;
+      color: white;
+    }
+  }
+  
+  /* 💻 Desktop */
+  @media (min-width: 1024px) {
+    .vista-mozos-contenedor {
+      padding: 24px;
+      border-radius: 0 0 50px 50px;
+      margin-bottom: 18px;
+    }
+  
+    .vista-mozos-main-content {
+      padding: 0 24px;
+    }
+  
+    .vista-mozos-tab {
+      flex: 1;
+      padding: 12px;
+      border-radius: 9999px;
+      text-align: center;
+      font-weight: 500;
+      border: none;
+      background: transparent;
+      color: #2b1c46;
+      cursor: pointer;
+    }
+  
+    .vista-mozos-tab-active {
+      background-color: #eb5998;
+      color: white;
+    }
   }
   
 
-.vista-mozos-tab {
-  flex: 1;
-  padding: 12px;
-  border-radius: 9999px;
-  text-align: center;
-  font-weight: 500;
-  border: none;
-  background: transparent;
-  color: #2b1c46; /* Reemplazo de var(--purple-dark) */
-  cursor: pointer;
-}
+  .vista-mozos-monto-saldos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  @media (min-width: 1024px) {
+    .vista-mozos-monto-saldos {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top:40px;
+      padding: 30px;
+      background-color: #ffffff;
+      color:#2b1c46;
+      border-radius: 30px;
+    }
+  
+    .vista-mozos-monto-saldos > * {
+      width: 48%; /* Cada uno ocupa casi la mitad */
+    }
 
-.vista-mozos-tab-active {
-  background-color: #eb5998; /* Reemplazo de var(--pink) */
-  color: white;
-}
+    .vista-mozos-contenedor {
+      background-color: #E4E4E4;
+      color: white;
+      padding: 24px;
+      border-radius: 0 0 50px 50px;
+      margin-bottom: 18px;
+    }
+
+    .vista-mozos {
+    
+      max-width: 100%;
+      min-height: 100vh;
+      background-color: #E4E4E4;
+    }
+    
 
 
-
+    .historial-desktop-wrapper {
+      background-color: #ffffff;
+      color: white;
+      margin: 30px;
+      border-radius:50px;
+      padding: 24px;
+      margin-top: 20px; /* si querés separar un poco del resto */
+    }
+  }
+  

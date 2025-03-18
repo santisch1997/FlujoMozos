@@ -1,26 +1,46 @@
 .saldos-container {
-    margin-bottom: 10px;
-  }
-  
-  .saldos-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .saldos-label {
-    font-size: 16px;
-    color: #c4c4c4; /* Reemplazo de var(--gray-300) */
-  }
-  
-  .saldos-amount {
-    background-color: #c4c4c494; /* Reemplazo de var(--gray-300) */
-    color: #ffffff; /* Reemplazo de var(--purple-dark) */
-    padding: 8px 16px;
-    border-radius: 9999px;
-    font-weight: 400;
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Distribuye espacio arriba, entre y abajo */
+  height: 100%; /* O definí una altura fija si es necesario */
+}
 
+.saldos-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0; /* Le das espacio entre filas SIN empujar el contenedor */
+}
+
+
+.saldos-label {
+  color: #c4c4c4; /* Reemplazo de var(--gray-300) */
+}
+
+.saldos-amount {
+  background-color: #c4c4c494; /* Reemplazo de var(--gray-300) */
+  color: #ffffff; /* Reemplazo de var(--purple-dark) */
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-weight: 400;
+}
+
+
+
+/* DESKTOP overrides */
+@media (min-width: 1024px) {
+  .saldos-label {
+    font-size: 16px; /* Cambia solo en desktop */
+    color:#6A6A6A;
+    font-weight:500
   }
-  
+
+
+
+  .saldos-amount {
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color:#2b1c46;
+  color: #ffffff;
+  }
+}

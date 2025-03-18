@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,8 +6,6 @@
   margin-bottom: 10px;
 }
 
-
-
 .header-logo {
   position: relative;
   width: 45px;
@@ -16,20 +13,17 @@
 }
 
 .header-logo-circle {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: #eb5998; /* Reemplazo de var(--pink) */
-    border-radius: 50%;
-  }
-  
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #eb5998; /* Reemplazo de var(--pink) */
+  border-radius: 50%;
+}
 
 .header-logo-circle-left {
   left: -4px;
   top: 0;
 }
-
-
 
 .header-logo-circle-right {
   left: 4px;
@@ -37,7 +31,7 @@
 }
 
 .header-logo-smile {
-    position: absolute;
+  position: absolute;
   width: 32px;
   height: 16px;
   background-color: #eb5998; /* Reemplazo de var(--pink) */
@@ -47,11 +41,115 @@
 }
 
 .header-logo-smile::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 12px;
+  background-color: #2b1c46; /* Reemplazo de var(--purple-dark) */
+  top: -12px;
+  left: 0;
+}
+
+/* ESTILOS PARA TABLET Y MOBILE (MANTENIENDO TODO IGUAL) */
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .header-logo {
+    position: relative;
+    width: 45px;
+    height: 32px;
+  }
+
+  .header-logo-circle {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #eb5998;
+    border-radius: 50%;
+  }
+
+  .header-logo-circle-left {
+    left: -4px;
+    top: 0;
+  }
+
+  .header-logo-circle-right {
+    left: 4px;
+    top: 0;
+  }
+
+  .header-logo-smile {
+    position: absolute;
+    width: 32px;
+    height: 16px;
+    background-color: #eb5998;
+    border-radius: 0 0 16px 16px;
+    top: 12px;
+    left: 0;
+  }
+
+  .header-logo-smile::before {
     content: "";
     position: absolute;
     width: 32px;
     height: 12px;
-    background-color: #2b1c46; /* Reemplazo de var(--purple-dark) */
+    background-color: #2b1c46;
     top: -12px;
     left: 0;
   }
+}
+
+
+@media (min-width: 1024px) {
+  .header-logo {
+  display:none;
+  }
+
+  .header-icon-hamb{
+    display:none;
+  }
+  .header-icon {
+    color: #2b1c46;
+    margin-left: auto; /* Lo empuja a la derecha si está en un flex container */
+  }
+  
+}
+
+/* Nuevo saludo */
+.header-greeting {
+  display: none; /* Por defecto oculto en mobile */
+}
+
+@media (min-width: 1024px) {
+  .header-greeting {
+    display: flex;
+    background-color: #2b1c46;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold */
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px; /* Espacio con respecto al ícono de notificaciones */
+  }
+
+  .header-icon-hamb {
+    display: none;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-icon {
+    color: #2b1c46;
+    margin-left: auto;
+  }
+}
