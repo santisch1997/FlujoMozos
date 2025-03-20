@@ -143,6 +143,8 @@
     animation: expandGreeting 1s ease-out forwards;
   }
 
+  
+
   @keyframes expandGreeting {
     0% {
       width: 30px;

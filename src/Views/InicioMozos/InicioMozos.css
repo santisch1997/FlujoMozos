@@ -68,7 +68,7 @@ body {
     }
 
     .vista-mozos {
-      width: calc(100% - 280px); /* Resto del ancho después del sidebar */
+      width: calc(100% - 20px); /* Resto del ancho después del sidebar */
     }
   }
   

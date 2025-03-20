@@ -14,7 +14,7 @@ const Monto = ({ tipo }) => {
   return (
     <div className="propina-total">
       <h2 className="propina-total-label">
-        {tipo === "Reseñas" ? "Promedio de reseñas" : "Total de tus propinas"}
+        {tipo === "Reseñas" ? "Promedio de reseñas" : "Total propina semanal"}
       </h2>
       <div className="propina-total-amount-container">
         {tipo === "Reseñas" ? (
